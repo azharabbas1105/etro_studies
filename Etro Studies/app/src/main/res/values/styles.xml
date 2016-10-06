@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="WidthHeightWrapContent" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthHeightFillParent" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="WidthFillParentHeightWrapContent" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthWrapContentHeightFillParent" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="HickoryActivityImageView" parent="WidthFillParentHeightWrapContent">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="HickoryActivityButton" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/hickory_button_selector</item>
+    </style>
+
+    <style name="HickoryActivityButtonParent" parent="WidthFillParentHeightWrapContent">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_marginLeft">@dimen/activity_hickory_button_parent_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/activity_hickory_button_parent_margin_right</item>
+        <item name="android:weightSum">4</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="HickoryActivityBackImage" parent="WidthHeightWrapContent">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/activity_hickory_back_image_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/activity_hickory_back_image_margin_margin_top</item>
+        <item name="android:padding">@dimen/activity_hickory_back_image_margin_padding</item>
+        <item name="android:background">@drawable/green_circle_icon</item>
+        <item name="android:src">@drawable/ic_action_back</item>
+    </style>
+
+    <style name="HickoryActivityShowTopFiveLayout" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/colorDarkGreen</item>
+        <item name="android:padding">@dimen/activity_hickory_show_top_five_padding</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="HickoryActivityCupImage" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/activity_hickory_cup_image_margin_left</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/_revised_layer_eleven</item>
+    </style>
+
+    <style name="HickoryActivityTextShowTopFive" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/activity_hickory_cup_image_margin_left</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/_revised_layer_eleven</item>
+    </style>
+
+    <!--style="@style/WidthFillParentHeightWrapContent"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="2dp"-->
+    <!--android:layout_marginRight="2dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="@string/show_top_five"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="@android:color/white"-->
+</resources>

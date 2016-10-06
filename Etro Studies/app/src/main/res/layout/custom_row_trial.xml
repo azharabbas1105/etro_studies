@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/row_selector"
+    android:id="@+id/trial_layout">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkerGray"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/tv_global_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Global Rank"
+        android:textColor="@color/colorCountry"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/rank_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/green_circle_icon">
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hickory"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorNameSiteRank"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

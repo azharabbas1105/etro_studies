@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WidthHeightFillParent"
+    android:background="@drawable/bg_icon"
+    tools:context="com.ingentive.leaderboard.activity.HickoryActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/HickoryActivityBackImage" />
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        style="@style/WidthFillParentHeightWrapContent"
+        android:layout_below="@id/iv_back">
+        <ImageView
+            android:id="@+id/iv_etro_studies"
+            style="@style/HickoryActivityImageView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_icon" />
+
+        <ImageView
+            android:id="@+id/iv_hickory"
+            android:layout_below="@+id/iv_etro_studies"
+            style="@style/HickoryActivityImageView"
+            android:src="@drawable/hickory_icon"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/button_layout"
+        style="@style/HickoryActivityButtonParent"
+        android:layout_below="@+id/top_layout">
+        <Button
+            android:id="@+id/btn_global"
+            style="@style/HickoryActivityButton"
+            android:text="@string/global" />
+
+        <ImageView
+            android:id="@+id/view_one"
+            style="@style/WidthWrapContentHeightFillParent"
+            android:layout_toRightOf="@+id/btn_global"
+            android:background="@color/colorDarkerGray"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <Button
+            android:id="@+id/btn_country"
+            style="@style/HickoryActivityButton"
+            android:layout_toRightOf="@+id/view_one"
+            android:text="@string/country" />
+
+        <ImageView
+            style="@style/WidthWrapContentHeightFillParent"
+            android:layout_toRightOf="@+id/btn_global"
+            android:background="@color/colorDarkerGray"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/show_top_five_layout"
+            style="@style/HickoryActivityShowTopFiveLayout">
+
+            <ImageView
+                android:id="@+id/iv_cup"
+                style="@style/HickoryActivityCupImage" />
+
+            <TextView
+                android:layout_toRightOf="@+id/iv_cup"
+                android:layout_toLeftOf="@+id/iv_show_top_five"
+                android:id="@+id/tv_show_top_five"
+                style="@style/WidthFillParentHeightWrapContent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center_horizontal"
+                android:text="@string/show_top_five"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_show_top_five"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/trial_layout"
+        style="@style/WidthFillParentHeightWrapContent"
+        android:layout_below="@+id/button_layout"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPaleGreen"
+       android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_current_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/current_rank"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_current_rank"
+            android:id="@+id/tv_investigator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:text="@string/investigator"
+            android:textColor="@color/colorWhite" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_weight="2"/>
+
+        <TextView
+            android:layout_toLeftOf="@+id/tv_total_entrolled_since_start"
+            android:id="@+id/tv_total_entrolled_this_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_enrolled_this_month"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_total_entrolled_since_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:text="@string/total_enrolled_since_start"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/trial_layout"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

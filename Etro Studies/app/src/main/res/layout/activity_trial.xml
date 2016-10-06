@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_icon"
+    tools:context="com.ingentive.leaderboard.activity.TrialActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_circle_icon"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_back" />
+
+    <ImageView
+        android:id="@+id/iv_etro_studies"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_back"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_icon" />
+
+    <TextView
+        android:id="@+id/tv_richard_feddrak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_etro_studies"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/richard_fedorak"
+
+        android:textColor="@color/colorBlue"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_trial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_richard_feddrak"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/see_stand_selector"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/select_trial"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_trial"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

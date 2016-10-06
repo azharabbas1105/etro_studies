@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_icon"
+    tools:context="com.ingentive.leaderboard.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_etro_studies"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo_icon" />
+
+    <ImageView
+        android:layout_below="@+id/iv_etro_studies"
+        android:id="@+id/iv_revised_leaderboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/leaderboard_green_text_icon" />
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_below="@+id/iv_revised_leaderboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_layout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_site_number"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/site_number"
+            android:textColorHint="@color/colorDarkerGray"
+            android:background="@color/colorTransparent"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorDarkOliveGreen"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="fill_parent"
+            android:background="@color/colorTransparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/colorDarkerGray"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/remberme_layout"
+        android:layout_below="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_checkbox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/remember_unchecked_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorCountry"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="@string/remember_me"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/see_where_i_stand_layout"
+        android:layout_below="@+id/remberme_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/see_stand_selector"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/user_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:textSize="20sp"
+            android:text="@string/see_where_stand"/>
+    </LinearLayout>
+</RelativeLayout>

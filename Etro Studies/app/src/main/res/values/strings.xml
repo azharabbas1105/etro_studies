@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Etro Studies</string>
+    <string name="site_number">Site Number:</string>
+    <string name="password">Password:</string>
+    <string name="remember_me">Remember me next time</string>
+    <string name="see_where_stand">See Where I Stand...</string>
+    <string name="richard_fedorak">Richard Fedorak</string>
+    <string name="select_trial">Select a Trial</string>
+    <string name="global">GLOBAL</string>
+    <string name="country">COUNTRY</string>
+    <string name="current_rank">Current\n  Rank</string>
+    <string name="investigator">Investigator</string>
+    <string name="total_enrolled_this_month">Total Enrolled\n  This Month</string>
+    <string name="total_enrolled_since_start">Total Enrolled\n  Since Start</string>
+    <string name="show_top_five">SHOW TOP 5</string>
+
+</resources>
